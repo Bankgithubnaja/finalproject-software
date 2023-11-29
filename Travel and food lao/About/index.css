@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Lao+Looped:wght@200&family=Roboto+Condensed&family=Roboto:ital,wght@0,300;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Start nav */
+nav {
+    padding: 1rem;
+    background-color: #2A334A;
+    color: white;
+
+    .container {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
+    .nav-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & h2 {
+            font-size: 36px;
+        }
+
+        & ul {
+            display: flex;
+            list-style: none;
+
+            & li {
+                margin: 10px;
+
+                & a {
+                    font-size: 24px;
+                    text-decoration: none;
+                    color: white;
+                    position: relative;
+                    padding: 4px 2px;
+                }
+
+                & a:hover {
+                    border-bottom: white 3px solid;
+                }
+            }
+        }
+    }
+}
+
+/* End nav */
+
+article{
+    text-align: center;
+    > h2{
+        margin-top: 4rem;
+        font-size: 36px;
+    }
+    & .art-con{
+        padding:2rem  22rem;
+        & p{
+            margin-top: 10px;
+            font-size: 26px;
+        }
+    }
+    & .art-con1{
+        padding:2rem  22rem;
+        display: flex;
+        justify-content: center;
+        & p{
+            margin: 10px 20px;
+            font-size: 26px;
+        }
+    }
+}

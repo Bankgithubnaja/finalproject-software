@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Lao+Looped:wght@200&family=Roboto+Condensed&family=Roboto:ital,wght@0,300;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Start nav */
+nav {
+    padding: 1rem;
+    .nav-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h2{
+            font-size: 36px;
+        }
+        & ul{
+            display: flex;
+            list-style: none;
+            & li{
+                margin: 0 16px;
+                & a{
+                    font-size: 24px;
+                    text-decoration: none;
+                    color: #212121;
+                    position: relative;
+                    padding: 4px 2px;
+                }
+                & a:hover{
+                    border-bottom: #212121 3px solid;
+                }
+            }
+        }
+    }
+}
+/* End nav */
+
+/* Start section */
+section{
+    padding: 0 32px;
+    height: 690px;
+    background-image: url(Rectangle\ 18.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    .section-con{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 690px;
+        & .section-info{
+            color: white;
+            width: 500px;
+        }
+    }
+}
+section ::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(80deg, rgba(0, 0, 0, 0.466) , rgba(0, 0, 0, 0));
+    height: 690px;
+    z-index: -1;
+}
+/* End section */
+
+/* start main */
+main{
+    padding: 5rem 2rem;
+    height: auto;
+    text-align: center;
+    & .main-con{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px 0;
+            & .card{
+                height: 280px;
+                width: 400px;
+                border-radius: 20px;
+                margin: 0 20px;
+                padding-bottom: 1.2rem;
+                text-align: center;display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                background-size: cover;
+                background-position: center;
+                transition: 0.9s;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                & p{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        & a:hover{
+            .card{
+                transform: translateY(-6px);
+            }
+        }
+    }
+}
+/* End main */
+
+/* Start footer */
+footer{
+    padding: 1.4rem;
+    background-color: #212121;
+    text-align: center;
+    color: white;
+}
+/* End footer */
+
+/* Screen470 */
+@media screen and (max-width:470px){
+    /* Start nav */
+nav {
+    padding: 2rem;
+    .nav-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h2{
+            font-size: 36px;
+        }
+        & ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            & li{
+                margin:16px;
+                & a{
+                    font-size: 24px;
+                    text-decoration: none;
+                    color: #212121;
+                    position: relative;
+                    padding: 4px 2px;
+                }
+                & a:hover{
+                    border-bottom: #212121 3px solid;
+                }
+            }
+        }
+    }
+}
+/* End nav */
+
+/* start main */
+main{
+    padding: 5rem 2rem;
+    height: auto;
+    text-align: center;
+    & .main-con{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px 0;
+            & .card{
+                height: 280px;
+                width: 380px;
+                border-radius: 20px;
+                margin: 0 20px;
+                padding-bottom: 1.2rem;
+                text-align: center;display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                background-size: cover;
+                background-position: center;
+                transition: 0.9s;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                & p{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        & a:hover{
+            .card{
+                transform: translateY(-6px);
+            }
+        }
+    }
+}
+/* End main */
+}
+/* Screen470  end*/
+
+/* Screen420 */
+@media screen and (max-width:420px){
+    /* start main */
+main{
+    padding: 5rem 2rem;
+    height: auto;
+    text-align: center;
+    & .main-con{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px 0;
+            & .card{
+                height: 280px;
+                width: 320px;
+                border-radius: 20px;
+                margin: 0 20px;
+                padding-bottom: 1.2rem;
+                text-align: center;display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                background-size: cover;
+                background-position: center;
+                transition: 0.9s;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                & p{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        & a:hover{
+            .card{
+                transform: translateY(-6px);
+            }
+        }
+    }
+}
+/* End main */
+}
+/* Screen420 end*/
